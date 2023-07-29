@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/assets/logo.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <title>Wan-Host whois</title>
+</head>
+<body class="bg-dark">
+    <nav style="background: red;" class="navbar bg-dark mb-auto">
+        <div class="container-fluid">
+          <span class="navbar-brand mb-0 h1 text-white">Wan-Host whois</span>
+        </div>
+    </nav>
+    <main class="px-3">
+        <div class="p-5 text-center bg-dark rounded-3">
+            <img class="bi mt-4 mb-3" src="assets/logo.png" width="100" height="100"><use xlink:href="#bootstrap"></use></svg>
+            <h1 class="text-white">Wan-Host whois</h1>
+            <p class="col-lg-8 mx-auto fs-5 text-white">
+              A faster way to search for <code>domains</code>
+            </p>
+            <div class="d-inline-flex gap-2 mb-5">
+                <form class="d-flex" role="search" action="/search">
+                    <input name="q" class="form-control me-2" type="search" placeholder="Search" aria-label="Search" required>
+                    <button onclick="submitDomain()" class="btn btn-outline-primary" type="submit">Search</button>
+                </form>
+            </div>
+
+        </div>
+    </main>
+    <footer style="margin-top: 193px; margin-left: 50px;" class="text-white-50">
+        <p>Made with 💖 by <a href="https://github.com/over2genie87">over genie</a></p>
+    </footer>
+</body>
+<script>
+    async function submitDomain(){
+        
+    }
+</script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
+</html>

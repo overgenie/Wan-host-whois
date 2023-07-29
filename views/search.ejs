@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/assets/logo.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <title>Wan-Host whois</title>
+</head>
+<body class="bg-dark">
+    <nav style="background: red;" class="navbar bg-dark mb-auto">
+        <div class="container-fluid">
+          <span class="navbar-brand mb-0 h1 text-white">Wan-Host whois</span>
+        </div>
+    </nav>
+    <main class="px-3">
+        <div class="p-5 text-center bg-dark rounded-3">
+            <img class="bi mt-4 mb-3" src="/assets/logo.png" width="100" height="100"><use xlink:href="#bootstrap"></use></svg>
+            <h1 class="text-white">Who is <code><%= data["domain name"].toLowerCase() %></code> ?</h1>
+
+
+
+            <div class="d-inline-flex gap-2 mb-5 bg-dark">
+                <table class="table bg-dark text-white">
+                    <thead>
+                    </thead>
+                    <tbody class="bg-dark">
+                      <tr>
+                        <td>name servers</td>
+                        <td><% data["name servers"].forEach(nserver => { %>
+                            <%= nserver %> - 
+                        <% }) %></td>
+                      </tr>
+                      <tr>
+                        <td>domain name</td>
+                        <td><%= data["domain name"] %></td>
+
+                      </tr>
+                      <tr>
+                        <td>Registry Domain ID</td>
+                        <td><%= data["Registry Domain ID"] %></td>
+                      </tr>
+                      <tr>
+                        <td>Registrar WHOIS Server</td>
+                        <td><%= data["Registrar WHOIS Server"] %></td>
+                      </tr>
+                      <tr>
+                        <td>Registrar URL</td>
+                        <td><%= data["Registrar URL"] %></td>
+                      </tr>
+                      <tr>
+                        <td>Updated Date</td>
+                        <td><%= data["Updated Date"] %></td>
+                      </tr>
+                      <tr>
+                        <td>Created Date</td>
+                        <td><%= data["Created Date"] %></td>
+                      </tr>
+                      <tr>
+                        <td>Expiry Date</td>
+                        <td><%= data["Expiry Date"] %></td>
+                      </tr>
+                      <tr>
+                        <td>Registrar</td>
+                        <td><%= data["Registrar"] %></td>
+                      </tr>
+                      <tr>
+                        <td>Registrar IANA ID</td>
+                        <td><%= data["Registrar IANA ID"] %></td>
+                      </tr>
+                      <tr>
+                        <td>Registrar Abuse Contact Email</td>
+                        <td><%= data["Registrar Abuse Contact Email"] %></td>
+                      </tr>
+                      <tr>
+                        <td>Registrar Abuse Contact Phone</td>
+                        <td><%= data["Registrar Abuse Contact Phone"] %></td>
+                      </tr>
+                      <tr>
+                        <td>DNSSEC</td>
+                        <td><%= data["DNSSEC"] %></td>
+                      </tr>
+                    </tbody>
+                  </table>
+            </div>
+
+        </div>
+    </main>
+    <footer style="margin-top: 193px; margin-left: 50px;" class="text-white-50">
+        <p>Made with 💖 by <a href="https://github.com/over2genie87">over genie</a></p>
+    </footer>
+</body>
+<script>
+    async function submitDomain(){
+        
+    }
+</script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
+</html>
